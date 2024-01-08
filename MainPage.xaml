@@ -15,7 +15,7 @@
                 FontSize="32"
                 HorizontalOptions="Center"/>
 
-            <Grid BackgroundColor="DarkCyan" RowSpacing="15" ColumnSpacing="5" Padding="10"  HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+            <Grid BackgroundColor="DarkCyan" RowSpacing="5" ColumnSpacing="5" Padding="10"  HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
@@ -30,25 +30,36 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Text="0" TextColor="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Margin="30"/>
+                <Border Stroke="Black" Margin="10" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+                    <Label Text="0" TextColor="Black"  FontSize="25" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Margin="30"/>
+                </Border>
                 <!--#region -->
-                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="0"
+                <BoxView CornerRadius="20" Color="White"  Grid.Row="1" Grid.Column="0"/>
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60"  Grid.Row="1" Grid.Column="0"
                 Text="AC" BackgroundColor="White" TextColor="Black"
                 HorizontalOptions="Center" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="2" Grid.Column="0"/>
                 <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="2" Grid.Column="0"
                 Text="7"
                 HorizontalOptions="Center" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="3" Grid.Column="0"/>
                 <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="3" Grid.Column="0"
                 Text="4"
                 HorizontalOptions="Center" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="4" Grid.Column="0"/>
                 <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="4" Grid.Column="0"
                 Text="1"
                 HorizontalOptions="Center" />
-                <Button CornerRadius="90" HeightRequest="60" WidthRequest="130" Grid.Row="5" Grid.Column="0"
-                Text="0" Margin="10,0,0,0"
-                HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Button CornerRadius="10" HeightRequest="60" WidthRequest="130" Grid.Row="5" Grid.Column="0"
+                Text="0" Margin="10,0,0,0" 
+                HorizontalOptions="Center" Grid.ColumnSpan="2"/>
                 <!--#region -->
                 <!--#region -->
+                <BoxView CornerRadius="20" Color="White" Grid.Row="1" Grid.Column="1"/>
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="2" Grid.Column="1" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="3" Grid.Column="1" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="4" Grid.Column="1" />
                 <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="1"
                 Text="+/-" BackgroundColor="White" TextColor="Black"
                 HorizontalOptions="Center" />
@@ -63,6 +74,11 @@
                 HorizontalOptions="Center" />
                 <!--#region -->
                 <!--#region -->
+                <BoxView CornerRadius="20" Color="White" Grid.Row="1" Grid.Column="2"/>
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="2" Grid.Column="2" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="3" Grid.Column="2" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="4" Grid.Column="2" />
+                <BoxView CornerRadius="20" Color="#512BD4" Grid.Row="5" Grid.Column="2" />
                 <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="2"
                 Text="%" BackgroundColor="White" TextColor="Black"
                 HorizontalOptions="Center" />
@@ -80,6 +96,11 @@
                 HorizontalOptions="Center" />
                 <!--#region -->
                 <!--#region -->
+                <BoxView CornerRadius="20" Color="Orange" Grid.Row="1" Grid.Column="3"/>
+                <BoxView CornerRadius="20" Color="Orange" Grid.Row="2" Grid.Column="3" />
+                <BoxView CornerRadius="20" Color="Orange" Grid.Row="3" Grid.Column="3" />
+                <BoxView CornerRadius="20" Color="Orange" Grid.Row="4" Grid.Column="3" />
+                <BoxView CornerRadius="20" Color="Orange" Grid.Row="5" Grid.Column="3" />
                 <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="3"
                 Text="/" BackgroundColor="Orange" TextColor="Black"
                 HorizontalOptions="Center" />
