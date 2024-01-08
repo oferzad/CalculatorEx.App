@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorEx.MainPage">
+
+    <Border Stroke="Gray" Margin="10">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Calculator"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center"/>
+
+            <Grid BackgroundColor="DarkCyan" RowSpacing="15" ColumnSpacing="5" Padding="10"  HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="0" TextColor="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Margin="30"/>
+                <!--#region -->
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="0"
+                Text="AC" BackgroundColor="White" TextColor="Black"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="2" Grid.Column="0"
+                Text="7"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="3" Grid.Column="0"
+                Text="4"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="4" Grid.Column="0"
+                Text="1"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="130" Grid.Row="5" Grid.Column="0"
+                Text="0" Margin="10,0,0,0"
+                HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <!--#region -->
+                <!--#region -->
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="1"
+                Text="+/-" BackgroundColor="White" TextColor="Black"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="2" Grid.Column="1"
+                Text="8"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="3" Grid.Column="1"
+                Text="5"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="4" Grid.Column="1"
+                Text="2"
+                HorizontalOptions="Center" />
+                <!--#region -->
+                <!--#region -->
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="2"
+                Text="%" BackgroundColor="White" TextColor="Black"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="2" Grid.Column="2"
+                Text="9"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="3" Grid.Column="2"
+                Text="6"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="4" Grid.Column="2"
+                Text="3"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="5" Grid.Column="2"
+                Text="."
+                HorizontalOptions="Center" />
+                <!--#region -->
+                <!--#region -->
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="1" Grid.Column="3"
+                Text="/" BackgroundColor="Orange" TextColor="Black"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="2" Grid.Column="3"
+                Text="x" BackgroundColor="Orange"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="3" Grid.Column="3"
+                Text="-" BackgroundColor="Orange"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="4" Grid.Column="3"
+                Text="+" BackgroundColor="Orange"
+                HorizontalOptions="Center" />
+                <Button CornerRadius="90" HeightRequest="60" WidthRequest="60" Grid.Row="5" Grid.Column="3"
+                Text="=" BackgroundColor="Orange"
+                HorizontalOptions="Center" />
+                <!--#region -->
+            </Grid>
+            
+        </VerticalStackLayout>
+    </Border>
+
+</ContentPage>
